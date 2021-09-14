@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/exposition-calculator/static/css/main.52c4223e.chunk.css",
+    "main.js": "/exposition-calculator/static/js/main.2419d63c.chunk.js",
+    "main.js.map": "/exposition-calculator/static/js/main.2419d63c.chunk.js.map",
+    "runtime-main.js": "/exposition-calculator/static/js/runtime-main.6d9db828.js",
+    "runtime-main.js.map": "/exposition-calculator/static/js/runtime-main.6d9db828.js.map",
+    "static/css/2.bded3b46.chunk.css": "/exposition-calculator/static/css/2.bded3b46.chunk.css",
+    "static/js/2.bfa821cc.chunk.js": "/exposition-calculator/static/js/2.bfa821cc.chunk.js",
+    "static/js/2.bfa821cc.chunk.js.map": "/exposition-calculator/static/js/2.bfa821cc.chunk.js.map",
+    "index.html": "/exposition-calculator/index.html",
+    "static/css/2.bded3b46.chunk.css.map": "/exposition-calculator/static/css/2.bded3b46.chunk.css.map",
+    "static/css/main.52c4223e.chunk.css.map": "/exposition-calculator/static/css/main.52c4223e.chunk.css.map",
+    "static/js/2.bfa821cc.chunk.js.LICENSE.txt": "/exposition-calculator/static/js/2.bfa821cc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d9db828.js",
+    "static/css/2.bded3b46.chunk.css",
+    "static/js/2.bfa821cc.chunk.js",
+    "static/css/main.52c4223e.chunk.css",
+    "static/js/main.2419d63c.chunk.js"
+  ]
+}
