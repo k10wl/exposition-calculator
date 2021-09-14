@@ -182,10 +182,10 @@
 }
 
 .number-slide p {
-    font-family: Cambria, sans-serif;
+    font-family: "bona_novaregular", sans-serif;
 }
 .number-slide span {
-    font-family: "Oswald Stencil", serif;
+    font-family: "oswald_stencilbold", serif;
 }
 
 .number-slide p:last-child:before {

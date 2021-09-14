@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: Inconsolata, monospace;
+    font-family: "inconsolataregular", monospace;
     font-size: 1.5rem;
     line-height: 0;
 }
@@ -39,7 +39,7 @@
     border-radius: 7px;
     margin: 2px;
     padding: 7px;
-    font-family: Lato, sans-serif;
+    font-family: "latoregular", sans-serif;
     font-size: 1rem;
     transition: .2s;
 }
