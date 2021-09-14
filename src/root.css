@@ -1,6 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
-@import url("https://uk.allfont.net/allfont.css?fonts=oswald-stencil-bold");
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+    font-family: "oswald_stencilbold";
+    src: url("fonts/oswald-stencil-webfont.woff2") format("woff2"),
+    url("fonts/oswald-stencil-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "bona_novaregular";
+    src: url("fonts/bonanova-regular-webfont.woff2") format("woff2"),
+    url("fonts/bonanova-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "latoregular";
+    src: url("fonts/lato-regular-webfont.woff2") format("woff2"),
+    url("fonts/lato-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "inconsolataregular";
+    src: url("fonts/inconsolata-variablefont_wdthwght-webfont.woff2") format("woff2"),
+    url("fonts/inconsolata-variablefont_wdthwght-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 #root {
     width: 100vw;
