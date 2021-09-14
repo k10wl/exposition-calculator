@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
+@import url("https://uk.allfont.net/allfont.css?fonts=oswald-stencil-bold");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238,247,250);
+    background:
+            linear-gradient(
+                    27deg,
+                    rgba(238,247,250,1) 0%,
+                    rgba(248,255,254,1) 47%,
+                    rgba(240,255,251,1) 100%
+            );
+    overflow: hidden;
+}
+
+:root {
+    --global-sliding-animation: .75s cubic-bezier(.46,.03,.52,.96);
+}

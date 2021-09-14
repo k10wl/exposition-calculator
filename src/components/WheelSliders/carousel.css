@@ -1,0 +1,202 @@
+
+:root {
+    --slide-hegiht: 200px;
+}
+
+.carousel-show, .carousel-hide {
+    position: absolute;
+    bottom: calc(0% + 2vh);
+    transition: var(--global-sliding-animation);
+}
+
+.carousel-hide {
+    bottom: calc(0% - var(--slide-hegiht));
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 990px;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+    line-height: 0;
+    font-weight: 500;
+    max-height: 100vh;
+}
+
+.slider-container {
+    position: relative;
+    height: var(--slide-hegiht);
+    background-color: #1d1d1d;
+    box-shadow: 0 0 1px 1px #A8A8A8,
+    inset 59px -65px 10px -65px #000000,
+    inset -60px 65px 10px -65px #0C0002;
+}
+
+.slider-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.number-slide:before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border: 30px solid #1d1d1d;
+    border-left: 5px solid #1d1d1d;
+    border-right: 5px solid #1d1d1d;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.number-slide:after {
+    content: "";
+    width: 10px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow:
+            20px 0 0 0 #fff,
+            40px 0 0 0 #fff,
+            60px 0 0 0 #fff,
+            80px 0 0 0 #fff,
+            100px 0 0 0 #fff,
+            120px 0 0 0 #fff,
+            140px 0 0 0 #fff,
+            160px 0 0 0 #fff,
+            180px 0 0 0 #fff,
+            200px 0 0 0 #fff,
+            220px 0 0 0 #fff,
+            240px 0 0 0 #fff,
+            260px 0 0 0 #fff,
+            280px 0 0 0 #fff,
+            300px 0 0 0 #fff,
+            320px 0 0 0 #fff,
+            340px 0 0 0 #fff,
+            360px 0 0 0 #fff,
+            380px 0 0 0 #fff,
+            400px 0 0 0 #fff,
+            420px 0 0 0 #fff,
+            440px 0 0 0 #fff,
+            460px 0 0 0 #fff,
+            480px 0 0 0 #fff,
+            500px 0 0 0 #fff,
+            520px 0 0 0 #fff,
+            540px 0 0 0 #fff,
+            560px 0 0 0 #fff,
+            580px 0 0 0 #fff,
+            600px 0 0 0 #fff,
+            620px 0 0 0 #fff,
+            640px 0 0 0 #fff,
+            660px 0 0 0 #fff,
+            680px 0 0 0 #fff,
+            700px 0 0 0 #fff,
+            720px 0 0 0 #fff,
+            740px 0 0 0 #fff,
+            760px 0 0 0 #fff,
+            780px 0 0 0 #fff,
+            800px 0 0 0 #fff,
+            820px 0 0 0 #fff,
+            840px 0 0 0 #fff,
+            860px 0 0 0 #fff,
+            880px 0 0 0 #fff,
+            900px 0 0 0 #fff,
+            920px 0 0 0 #fff,
+            940px 0 0 0 #fff,
+            960px 0 0 0 #fff,
+            980px 0 0 0 #fff,
+
+            0 calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            20px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            40px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            60px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            80px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            100px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            120px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            140px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            160px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            180px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            200px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            220px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            240px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            260px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            280px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            300px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            320px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            340px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            360px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            380px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            400px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            420px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            440px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            460px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            480px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            500px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            520px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            540px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            560px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            580px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            600px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            620px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            640px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            660px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            680px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            700px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            720px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            740px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            760px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            780px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            800px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            820px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            840px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            860px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            880px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            900px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            920px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            940px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            960px calc(var(--slide-hegiht) - 30px) 0 0 #fff,
+            980px calc(var(--slide-hegiht) - 30px) 0 0 #fff;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+}
+
+.number-slide span, .number-slide p {
+    color: #212121;
+    margin: 0;
+    padding: 0;
+}
+
+.number-slide p {
+    font-family: Cambria, sans-serif;
+}
+.number-slide span {
+    font-family: "Oswald Stencil", serif;
+}
+
+.number-slide p:last-child:before {
+    content: "";
+    width: 65%;
+    height: 2px;
+    background-color: #d2d2d2;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}

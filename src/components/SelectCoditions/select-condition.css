@@ -1,0 +1,60 @@
+.conditions-container--show, .conditions-container--hide {
+    position: absolute;
+    top: 0;
+    transition: var(--global-sliding-animation);
+}
+
+.conditions-container--hide {
+    transform: translateY(-100%);
+}
+
+[class^=conditions-container] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Inconsolata, monospace;
+    font-size: 1.5rem;
+    line-height: 0;
+}
+
+[class^=conditions-container--]>[class$=buttons] {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conditions-container--weather__buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+[class$=buttons]>button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 500px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 2px;
+    padding: 7px;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+[class$=__buttons]>button:hover, [class$=__buttons]>button:focus {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.58);
+    outline: 1px solid #000000;
+}
+
+[class$=__buttons]>.selected {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.conditions-container--iso__buttons>button {
+    width: 50px;
+}

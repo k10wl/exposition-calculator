@@ -1,0 +1,108 @@
+.calculator {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+[class^=calculator--controls__] {
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: #e9e9e9;
+    mix-blend-mode: difference;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 1.25rem;
+    padding-bottom: 12px;
+    height: 60px;
+    position: absolute;
+    transform: translate(-50%, calc(0% + 5px));
+    top: 0;
+    left: 50%;
+    z-index: 9999;
+    transition: .5s;
+}
+
+[class^=calculator--controls__]:active {
+    border: 1px solid;
+}
+
+[class^=calculator--controls__] ~ [class^=calculator--controls__] {
+    padding-bottom: 0;
+    top: 100%;
+    bottom: 0;
+    transform: translate(-50%, calc(-100% - 15px));
+}
+
+[class$=arrow] {
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    user-select: none;
+}
+
+.calculator--controls__bot-arrow {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: translate(-50%, -175%) rotate(45deg);
+}
+
+.calculator--controls__top-arrow {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    transform: translate(-50%, 75%) rotate(45deg);
+}
+
+[class^=calculator--controls__]:hover>.calculator--controls__top-arrow,
+[class^=calculator--controls__]:focus>.calculator--controls__top-arrow {
+    animation: top-arrow-jiggle 2s linear infinite reverse;
+}
+
+@keyframes top-arrow-jiggle {
+    0%, 60% {
+        transform: translate(-50%, 75%) rotate(45deg);
+    }
+    70% {
+        transform: translate(-50%, 55%) rotate(45deg);
+    }
+    80% {
+        transform: translate(-50%, 75%) rotate(45deg);
+    }
+    90% {
+        transform: translate(-50%, 55%) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, 75%) rotate(45deg);
+    }
+}
+
+.calculator--controls__bot-arrow,
+.calculator--controls__bot-arrow:focus {
+    animation: bot-arrow-jiggle 1s linear infinite alternate;
+}
+
+@keyframes bot-arrow-jiggle {
+    from {
+        transform: translate(-50%, -175%) rotate(45deg);
+    }
+    to {
+        transform: translate(-50%, -155%) rotate(45deg);
+    }
+}
+
+.calculator--controls__hide {
+    opacity: 0;
+}
