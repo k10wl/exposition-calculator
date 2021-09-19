@@ -24,21 +24,25 @@ function WheelSliders({availableAp, availableEx, defaultValue, fn, configuringCo
     if (slider === null) {
       return;
     }
-    function changeSlide(e: KeyboardEvent) {
-      const downCondition =
-        e.key === "ArrowLeft" || e.key === "-";
-      const upCondition =
-        e.key === "ArrowRight" || e.key === "+" || e.key === "=";
-      if (downCondition) {
-        slider.moveToSlide(slider.details().relativeSlide - 1, 500);
-      }
-      if (upCondition) {
-        slider.moveToSlide(slider.details().relativeSlide + 1, 500);
+    const moveLeft = () => slider.moveToSlide(slider.details().relativeSlide - 1, 500);
+    const moveRight = () => slider.moveToSlide(slider.details().relativeSlide + 1, 500);
+    const strategies: {
+      [key: string]: () => void;
+    } = {
+      ArrowLeft: moveLeft,
+      "-": moveLeft,
+
+      ArrowRight: moveRight,
+      "+": moveRight,
+      "=": moveRight,
+    }
+    const changeSlide = (e: KeyboardEvent): void => {
+      if (strategies[e.key]) {
+        strategies[e.key]();
       }
     }
-    document.addEventListener("keydown", changeSlide);
-    if (configuringCondition) {
-      document.removeEventListener("keydown", changeSlide);
+    if (!configuringCondition) {
+      document.addEventListener("keydown", changeSlide);
     }
     return () => document.removeEventListener("keydown", changeSlide);
   }, [slider, configuringCondition])

@@ -140,6 +140,15 @@ function Calculator() {
     };
   }, [weather, iso])
 
+  const memoSlider = React.useMemo(() =>
+    <WheelSliders
+      availableAp={availableAp}
+      availableEx={availableEx}
+      defaultValue={aperture}
+      fn={handleChange}
+      configuringCondition={showConditions}
+    />, [weather, iso, showConditions])
+
   return (
     <div className={`calculator`}>
       <SelectConditions
@@ -172,13 +181,7 @@ function Calculator() {
       />
       {
         (!cooldown && (weather !== "none" && iso !== "none")) &&
-        <WheelSliders
-          availableAp={availableAp}
-          availableEx={availableEx}
-          defaultValue={aperture}
-          fn={handleChange}
-          configuringCondition={showConditions}
-        />
+        memoSlider
       }
     </div>
   );
