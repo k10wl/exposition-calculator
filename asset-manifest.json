@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/exposition-calculator/static/css/main.9e9ad45f.chunk.css",
-    "main.js": "/exposition-calculator/static/js/main.2419d63c.chunk.js",
-    "main.js.map": "/exposition-calculator/static/js/main.2419d63c.chunk.js.map",
+    "main.js": "/exposition-calculator/static/js/main.cdc73e3b.chunk.js",
+    "main.js.map": "/exposition-calculator/static/js/main.cdc73e3b.chunk.js.map",
     "runtime-main.js": "/exposition-calculator/static/js/runtime-main.6d9db828.js",
     "runtime-main.js.map": "/exposition-calculator/static/js/runtime-main.6d9db828.js.map",
     "static/css/2.bded3b46.chunk.css": "/exposition-calculator/static/css/2.bded3b46.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.bded3b46.chunk.css",
     "static/js/2.bfa821cc.chunk.js",
     "static/css/main.9e9ad45f.chunk.css",
-    "static/js/main.2419d63c.chunk.js"
+    "static/js/main.cdc73e3b.chunk.js"
   ]
 }
