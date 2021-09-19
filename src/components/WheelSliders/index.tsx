@@ -13,7 +13,7 @@ type Props = {
 function WheelSliders({availableAp, availableEx, defaultValue, fn, configuringCondition}: Props) {
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     slidesPerView: 1.4,
-    mode: "snap",
+    mode: "free-snap",
     duration: 500,
     centered: true,
     loop: true,
